@@ -15,7 +15,7 @@ void main() async {
   Hive.init(docPath.path);
   Hive.registerAdapter(ArticlesAdapter());
 
-  await Hive.openBox('settingsBox');
+     await Hive.openBox('settingsBox');
   await Hive.openBox<Articles>('bookmarks');
   await Hive.openBox<Articles>('unreads');
 
